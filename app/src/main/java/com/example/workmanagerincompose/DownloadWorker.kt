@@ -16,6 +16,7 @@ import java.io.FileOutputStream
 import java.io.IOException
 import kotlin.random.Random
 
+@Suppress("BlockingMethodInNonBlockingContext")
 class DownloadWorker(
     private val context: Context ,
     private var workerParameters: WorkerParameters
